@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: aliceblue;
+    background-image: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1948&q=80');
+}
+
+.chartHolder {
+    background-color: rgba(55, 56, 55, 0.8);
+    height: 640px;
+    width: 920px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.4);
+    text-align: center;
+}
+
+h1 {
+   margin-top: 16px;  
+}
+
+
+.chart {
+   display: flex;
+   margin: auto;
+   height: 540px;
+   width: 880px;
+   justify-content: center;
+   align-items: flex-end;
+}
+
+#tooltip {
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    text-decoration: solid;  
+    font-weight: bolder;
+    border-radius: 6px; 
+}
+
+#legend {
+    font-size: x-small;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#x-axis, #y-axis {   
+    font-weight: 700;
+    font-size: 7px;
+}
+
+.cell:hover {
+    fill: rgb(219, 232, 244);
+}
